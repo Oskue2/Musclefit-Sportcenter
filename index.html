@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MuscleFit Sport Center | Gimnasio, Suplementos y Entrenamiento Personalizado</title>
+  <meta name="description" content="MuscleFit Sport Center: gimnasio con musculacion, cardio, clases grupales, entrenamiento personalizado, suplementos deportivos y ropa deportiva." />
+  <meta name="theme-color" content="#08090B" />
+  <link rel="icon" href="images/Logo.jpg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MuscleFit Sport Center" />
+  <meta property="og:description" content="Forja tu mejor version. Musculacion, cardio, clases grupales, entrenamiento personalizado y tienda de suplementos." />
+  <meta property="og:image" content="images/Logo.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="brand logo-box">
+      <img src="images/Logo.jpg" alt="MuscleFit Sport Center" class="brand__img" />
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#inicio">Inicio</a></li>
+        <li><a class="nav__link" href="#nosotros">Nosotros</a></li>
+        <li><a class="nav__link" href="#servicios">Servicios</a></li>
+        <li><a class="nav__link" href="#planes">Planes</a></li>
+        <li><a class="nav__link" href="#tienda">Tienda</a></li>
+        <li><a class="nav__link" href="#entrenadores">Entrenadores</a></li>
+        <li><a class="nav__link" href="#ubicacion">Ubicaci&oacute;n</a></li>
+      </ul>
+      <a href="#planes" class="btn btn--primary nav__cta">Inscr&iacute;bete</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Abrir men&uacute;" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="inicio">
+  <div class="hero__bg">
+    <!-- Coloca una foto del gimnasio en images/hero.jpg y aparecera automaticamente -->
+    <img src="images/hero.jpg" alt="" onerror="this.remove()" />
+  </div>
+  <div class="hero__glow"></div>
+
+  <div class="container hero__inner">
+    <span class="badge reveal">Tu mejor versi&oacute;n empieza hoy</span>
+    <h1 class="hero__title reveal">
+      ENTRENA COMO UN<br />
+      <span class="grad">ESPARTANO</span>
+    </h1>
+    <p class="hero__text reveal">
+      M&aacute;s que un gimnasio: un centro deportivo con equipos de alta gama, entrenadores
+      certificados, asesor&iacute;a nutricional y todo lo que necesitas para transformar tu cuerpo.
+    </p>
+    <div class="hero__actions reveal">
+      <a href="#" class="btn btn--primary btn--lg" data-wa="Hola! Quiero agendar mi *clase de prueba gratis* en MuscleFit Sport Center.">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.6A10 10 0 1 0 12 2z"/></svg>
+        Clase de prueba GRATIS
+      </a>
+      <a href="#planes" class="btn btn--ghost btn--lg">Ver planes y precios</a>
+    </div>
+
+    <ul class="stats reveal">
+      <li><strong data-count="850">0</strong><span>Miembros activos</span></li>
+      <li><strong data-count="12">0</strong><span>Entrenadores</span></li>
+      <li><strong data-count="30">0</strong><span>Clases semanales</span></li>
+      <li><strong data-count="6">0</strong><span>A&ntilde;os de experiencia</span></li>
+    </ul>
+  </div>
+
+  <a href="#nosotros" class="hero__scroll" aria-label="Bajar"><span></span></a>
+</section>
+
+<!-- ==================== NOSOTROS ==================== -->
+<section class="section" id="nosotros">
+  <div class="container">
+    <div class="split">
+      <div class="split__media reveal">
+        <div class="frame">
+          <img src="images/gimnasio.jpg" alt="Instalaciones MuscleFit" onerror="this.remove()" />
+          <div class="frame__ph"><div class="logo-box logo-box--frame"><img src="images/Logo.jpg" alt="MuscleFit Sport Center" /></div></div>
+        </div>
+      </div>
+
+      <div class="split__body">
+        <span class="eyebrow reveal">Qui&eacute;nes somos</span>
+        <h2 class="title reveal">Un espacio hecho para <span class="grad">superarte</span></h2>
+        <p class="lead reveal">
+          En MuscleFit Sport Center creemos que la disciplina construye resultados. Por eso
+          combinamos maquinaria de &uacute;ltima generaci&oacute;n, acompa&ntilde;amiento profesional y una
+          comunidad que te empuja a no rendirte nunca.
+        </p>
+
+        <ul class="features reveal">
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>Equipos de alta gama</strong><p>M&aacute;quinas importadas con mantenimiento permanente.</p></div>
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>Entrenadores certificados</strong><p>Profesionales en ciencias del deporte que corrigen tu t&eacute;cnica.</p></div>
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>Plan 100% personalizado</strong><p>Rutina y nutrici&oacute;n seg&uacute;n tu objetivo y tu tiempo.</p></div>
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>Tienda dentro del gym</strong><p>Suplementos originales y ropa deportiva de calidad.</p></div>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn--primary reveal" data-wa="Hola! Me gustaria conocer mas sobre MuscleFit Sport Center y agendar una visita.">Agenda una visita</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERVICIOS ==================== -->
+<section class="section section--alt" id="servicios">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow reveal">Lo que ofrecemos</span>
+      <h2 class="title reveal">Nuestros <span class="grad">servicios</span></h2>
+      <p class="lead lead--center reveal">Todo lo que necesitas para entrenar bajo un mismo techo.</p>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="card reveal">
+        <div class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.5 6.5v11M17.5 6.5v11M3 9v6M21 9v6M6.5 12h11"/></svg></div>
+        <h3>Musculaci&oacute;n y Pesas</h3>
+        <p>Zona de peso libre, m&aacute;quinas guiadas, mancuernas hasta 50 kg y racks profesionales para cada grupo muscular.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2.5-7 4 14 2.5-7H21"/></svg></div>
+        <h3>Zona Cardio</h3>
+        <p>Caminadoras, el&iacute;pticas, bicicletas y escaladoras con monitoreo de frecuencia card&iacute;aca y pantallas individuales.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="8" r="2.4"/><path d="M2.5 20c0-3.3 2.9-5.5 6.5-5.5s6.5 2.2 6.5 5.5M16 14.8c3.1.3 5.5 2.3 5.5 5.2"/></svg></div>
+        <h3>Clases Grupales</h3>
+        <p>Spinning, GAP, rumba fitness, TRX y stretching. M&aacute;s de 30 clases semanales incluidas en tu plan.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v3M12 18v3M4.2 7.5l2.6 1.5M17.2 15l2.6 1.5M4.2 16.5l2.6-1.5M17.2 9l2.6-1.5"/><circle cx="12" cy="12" r="3.2"/></svg></div>
+        <h3>Entrenamiento Funcional</h3>
+        <p>Circuitos de alta intensidad, cuerdas, kettlebells, cajones y sled para ganar potencia, fuerza y resistencia.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="7.5" r="3.5"/><path d="M4.5 20.5c0-4.1 3.4-6.5 7.5-6.5s7.5 2.4 7.5 6.5"/></svg></div>
+        <h3>Entrenamiento Personalizado</h3>
+        <p>Un coach exclusivo para ti: evaluaci&oacute;n f&iacute;sica, rutina a medida y seguimiento semanal de tus resultados.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h10l-1 7.5a4 4 0 0 1-8 0L7 3ZM9 21h6M12 14.5V21"/></svg></div>
+        <h3>Asesor&iacute;a Nutricional</h3>
+        <p>Plan de alimentaci&oacute;n seg&uacute;n tu objetivo, control de medidas y recomendaci&oacute;n de suplementaci&oacute;n adecuada.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PLANES ==================== -->
+<section class="section" id="planes">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow reveal">Membres&iacute;as</span>
+      <h2 class="title reveal">Elige tu <span class="grad">plan</span></h2>
+      <p class="lead lead--center reveal">Sin matr&iacute;cula y sin permanencia m&iacute;nima. Empieza cuando quieras.</p>
+    </div>
+
+    <div class="grid grid--3 plans">
+      <article class="plan reveal">
+        <h3 class="plan__name">B&aacute;sico</h3>
+        <p class="plan__desc">Para quienes arrancan a su ritmo.</p>
+        <div class="plan__price"><span class="cur">$</span><strong>79.000</strong><span class="per">/mes</span></div>
+        <ul class="plan__list">
+          <li>Acceso a zona de pesas y cardio</li>
+          <li>Horario completo</li>
+          <li>Rutina inicial de bienvenida</li>
+          <li>Casillero disponible</li>
+          <li class="off">Clases grupales</li>
+          <li class="off">Asesor&iacute;a nutricional</li>
+        </ul>
+        <a href="#" class="btn btn--ghost btn--full" data-wa="Hola! Estoy interesado en el *Plan Basico* de MuscleFit Sport Center. Me das mas informacion?">Quiero este plan</a>
+      </article>
+
+      <article class="plan plan--featured reveal">
+        <span class="plan__tag">M&aacute;s popular</span>
+        <h3 class="plan__name">Premium</h3>
+        <p class="plan__desc">El equilibrio perfecto entre precio y beneficios.</p>
+        <div class="plan__price"><span class="cur">$</span><strong>119.000</strong><span class="per">/mes</span></div>
+        <ul class="plan__list">
+          <li>Todo lo del plan B&aacute;sico</li>
+          <li>Clases grupales ilimitadas</li>
+          <li>Valoraci&oacute;n f&iacute;sica mensual</li>
+          <li>Rutina personalizada</li>
+          <li>10% de descuento en tienda</li>
+          <li class="off">Coach exclusivo</li>
+        </ul>
+        <a href="#" class="btn btn--primary btn--full" data-wa="Hola! Estoy interesado en el *Plan Premium* de MuscleFit Sport Center. Me das mas informacion?">Quiero este plan</a>
+      </article>
+
+      <article class="plan reveal">
+        <h3 class="plan__name">Elite</h3>
+        <p class="plan__desc">Resultados acelerados con acompa&ntilde;amiento total.</p>
+        <div class="plan__price"><span class="cur">$</span><strong>199.000</strong><span class="per">/mes</span></div>
+        <ul class="plan__list">
+          <li>Todo lo del plan Premium</li>
+          <li>8 sesiones con coach exclusivo</li>
+          <li>Plan nutricional completo</li>
+          <li>Seguimiento por WhatsApp</li>
+          <li>15% de descuento en tienda</li>
+          <li>Invitado gratis 1 vez al mes</li>
+        </ul>
+        <a href="#" class="btn btn--ghost btn--full" data-wa="Hola! Estoy interesado en el *Plan Elite* de MuscleFit Sport Center. Me das mas informacion?">Quiero este plan</a>
+      </article>
+    </div>
+
+    <div class="strip reveal">
+      <div class="strip__item"><strong>D&iacute;a</strong><span>$10.000</span></div>
+      <div class="strip__item"><strong>Semana</strong><span>$35.000</span></div>
+      <div class="strip__item"><strong>Quincena</strong><span>$50.000</span></div>
+      <div class="strip__item"><strong>Trimestre</strong><span>$299.000</span></div>
+      <div class="strip__item"><strong>Anual</strong><span>$899.000</span></div>
+      <a href="#" class="strip__cta" data-wa="Hola! Quiero informacion sobre los planes por dia, semana, quincena o anualidad.">Consultar &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ENTRENAMIENTO PERSONALIZADO ==================== -->
+<section class="section section--alt" id="personalizado">
+  <div class="container">
+    <div class="split split--reverse">
+      <div class="split__media reveal">
+        <div class="frame">
+          <img src="images/personalizado.jpg" alt="Entrenamiento personalizado" onerror="this.remove()" />
+          <div class="frame__ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="7.5" r="3.5"/><path d="M4.5 20.5c0-4.1 3.4-6.5 7.5-6.5s7.5 2.4 7.5 6.5"/></svg></div>
+        </div>
+      </div>
+
+      <div class="split__body">
+        <span class="eyebrow reveal">Uno a uno</span>
+        <h2 class="title reveal">Entrenamiento <span class="grad">personalizado</span></h2>
+        <p class="lead reveal">
+          Si buscas resultados r&aacute;pidos y seguros, un coach exclusivo dise&ntilde;a tu proceso
+          completo: desde la evaluaci&oacute;n inicial hasta el ajuste semanal de cargas.
+        </p>
+
+        <ol class="steps reveal">
+          <li><span>01</span><div><strong>Valoraci&oacute;n f&iacute;sica</strong><p>Medidas, composici&oacute;n corporal, movilidad y antecedentes.</p></div></li>
+          <li><span>02</span><div><strong>Dise&ntilde;o del plan</strong><p>Rutina y alimentaci&oacute;n seg&uacute;n tu objetivo y disponibilidad.</p></div></li>
+          <li><span>03</span><div><strong>Entrenamiento guiado</strong><p>Cada sesi&oacute;n acompa&ntilde;ada, corrigiendo t&eacute;cnica y ritmo.</p></div></li>
+          <li><span>04</span><div><strong>Seguimiento y ajuste</strong><p>Control de progreso y cambios de carga cada semana.</p></div></li>
+        </ol>
+
+        <a href="#" class="btn btn--primary reveal" data-wa="Hola! Quiero informacion sobre el *entrenamiento personalizado* con coach exclusivo.">Habla con un coach</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TIENDA ==================== -->
+<section class="section" id="tienda">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow reveal">Tienda</span>
+      <h2 class="title reveal">Suplementos y <span class="grad">ropa deportiva</span></h2>
+      <p class="lead lead--center reveal">Productos 100% originales. Pide por WhatsApp y recoge en el gimnasio o te lo enviamos.</p>
+    </div>
+
+    <div class="tabs reveal" role="tablist">
+      <button class="tab is-active" data-tab="suplementos" role="tab">Suplementos</button>
+      <button class="tab" data-tab="ropa" role="tab">Ropa deportiva</button>
+      <button class="tab" data-tab="accesorios" role="tab">Accesorios</button>
+    </div>
+
+    <div class="grid grid--4 tab-panel is-active" data-panel="suplementos">
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/proteina.jpg" alt="Prote&iacute;na Whey" onerror="this.remove()" />
+          <span class="product__ph">SUPLEMENTO</span>
+          <span class="product__badge">M&aacute;s vendido</span>
+        </div>
+        <div class="product__body">
+          <h3>Prote&iacute;na Whey 5 Lb</h3>
+          <p>24 g de prote&iacute;na por scoop. Ideal para ganancia de masa muscular y recuperaci&oacute;n.</p>
+          <div class="product__foot">
+            <span class="product__price">$210.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Proteina Whey 5 Lb* ($210.000). Esta disponible?">Pedir</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/creatina.jpg" alt="Creatina" onerror="this.remove()" />
+          <span class="product__ph">SUPLEMENTO</span>
+        </div>
+        <div class="product__body">
+          <h3>Creatina Monohidratada 300 g</h3>
+          <p>Micronizada. Aumenta fuerza, potencia y volumen muscular.</p>
+          <div class="product__foot">
+            <span class="product__price">$95.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Creatina Monohidratada 300 g* ($95.000). Esta disponible?">Pedir</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/preentreno.jpg" alt="Pre-entreno" onerror="this.remove()" />
+          <span class="product__ph">SUPLEMENTO</span>
+        </div>
+        <div class="product__body">
+          <h3>Pre-entreno 30 Servicios</h3>
+          <p>Energ&iacute;a, foco y bombeo muscular para entrenamientos de alta intensidad.</p>
+          <div class="product__foot">
+            <span class="product__price">$120.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Pre-entreno 30 servicios* ($120.000). Esta disponible?">Pedir</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/bcaa.jpg" alt="BCAA" onerror="this.remove()" />
+          <span class="product__ph">SUPLEMENTO</span>
+        </div>
+        <div class="product__body">
+          <h3>BCAA + Glutamina</h3>
+          <p>Amino&aacute;cidos esenciales que reducen el catabolismo y mejoran la recuperaci&oacute;n.</p>
+          <div class="product__foot">
+            <span class="product__price">$85.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *BCAA + Glutamina* ($85.000). Esta disponible?">Pedir</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid grid--4 tab-panel" data-panel="ropa">
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/camiseta.jpg" alt="Camiseta deportiva" onerror="this.remove()" />
+          <span class="product__ph">ROPA</span>
+          <span class="product__badge">Nuevo</span>
+        </div>
+        <div class="product__body">
+          <h3>Camiseta Dry-Fit MuscleFit</h3>
+          <p>Tela transpirable de secado r&aacute;pido. Tallas S a XXL.</p>
+          <div class="product__foot">
+            <span class="product__price">$65.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Camiseta Dry-Fit MuscleFit* ($65.000). Que tallas y colores tienen?">Pedir</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/leggins.jpg" alt="Leggins deportivos" onerror="this.remove()" />
+          <span class="product__ph">ROPA</span>
+        </div>
+        <div class="product__body">
+          <h3>Leggins Push-Up</h3>
+          <p>Alta compresi&oacute;n, tiro alto y tela opaca. No transparenta.</p>
+          <div class="product__foot">
+            <span class="product__price">$89.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Leggins Push-Up* ($89.000). Que tallas y colores tienen?">Pedir</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/short.jpg" alt="Short deportivo" onerror="this.remove()" />
+          <span class="product__ph">ROPA</span>
+        </div>
+        <div class="product__body">
+          <h3>Short Training Hombre</h3>
+          <p>Ligero, con bolsillos laterales y cord&oacute;n ajustable.</p>
+          <div class="product__foot">
+            <span class="product__price">$70.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Short Training Hombre* ($70.000). Que tallas tienen?">Pedir</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/top.jpg" alt="Top deportivo" onerror="this.remove()" />
+          <span class="product__ph">ROPA</span>
+        </div>
+        <div class="product__body">
+          <h3>Top Deportivo Soporte Alto</h3>
+          <p>Dise&ntilde;o ergon&oacute;mico para entrenamientos de alto impacto.</p>
+          <div class="product__foot">
+            <span class="product__price">$55.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Top Deportivo Soporte Alto* ($55.000). Que tallas tienen?">Pedir</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid grid--4 tab-panel" data-panel="accesorios">
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/shaker.jpg" alt="Shaker" onerror="this.remove()" />
+          <span class="product__ph">ACCESORIO</span>
+        </div>
+        <div class="product__body">
+          <h3>Shaker MuscleFit 600 ml</h3>
+          <p>Libre de BPA, con mezclador de acero y compartimiento para polvo.</p>
+          <div class="product__foot">
+            <span class="product__price">$35.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Shaker MuscleFit 600 ml* ($35.000). Esta disponible?">Pedir</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/guantes.jpg" alt="Guantes" onerror="this.remove()" />
+          <span class="product__ph">ACCESORIO</span>
+        </div>
+        <div class="product__body">
+          <h3>Guantes de Levantamiento</h3>
+          <p>Protegen tus manos y mejoran el agarre en peso libre.</p>
+          <div class="product__foot">
+            <span class="product__price">$45.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Guantes de Levantamiento* ($45.000). Que tallas tienen?">Pedir</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/cinturon.jpg" alt="Cintur&oacute;n" onerror="this.remove()" />
+          <span class="product__ph">ACCESORIO</span>
+        </div>
+        <div class="product__body">
+          <h3>Cintur&oacute;n de Fuerza</h3>
+          <p>Cuero reforzado. Soporte lumbar para sentadilla y peso muerto.</p>
+          <div class="product__foot">
+            <span class="product__price">$110.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Cinturon de Fuerza* ($110.000). Que tallas tienen?">Pedir</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product reveal">
+        <div class="product__img">
+          <img src="images/productos/straps.jpg" alt="Straps" onerror="this.remove()" />
+          <span class="product__ph">ACCESORIO</span>
+        </div>
+        <div class="product__body">
+          <h3>Straps + Mu&ntilde;equeras</h3>
+          <p>Kit de agarre y soporte para levantar m&aacute;s carga con seguridad.</p>
+          <div class="product__foot">
+            <span class="product__price">$40.000</span>
+            <button class="btn btn--sm btn--primary" data-wa="Hola! Quiero pedir: *Straps + Munequeras* ($40.000). Esta disponible?">Pedir</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="note reveal">
+      &iquest;Buscas una marca o producto que no ves aqu&iacute;? Escr&iacute;benos y lo conseguimos para ti.
+      <a href="#" data-wa="Hola! Estoy buscando un producto que no vi en el catalogo de la pagina. Me ayudas?">Preg&uacute;ntanos &rarr;</a>
+    </p>
+  </div>
+</section>
+
+<!-- ==================== ENTRENADORES ==================== -->
+<section class="section section--alt" id="entrenadores">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow reveal">El equipo</span>
+      <h2 class="title reveal">Nuestros <span class="grad">entrenadores</span></h2>
+      <p class="lead lead--center reveal">Profesionales que te acompa&ntilde;an en cada repetici&oacute;n.</p>
+    </div>
+
+    <div class="grid grid--4">
+      <article class="coach reveal">
+        <div class="coach__img"><img src="images/entrenadores/coach1.jpg" alt="" onerror="this.remove()" /><span class="coach__ph">MF</span></div>
+        <h3>Nombre Entrenador</h3>
+        <span class="coach__role">Hipertrofia y fuerza</span>
+        <p>Licenciado en deporte con 8 a&ntilde;os preparando atletas de f&iacute;sico culturismo.</p>
+      </article>
+
+      <article class="coach reveal">
+        <div class="coach__img"><img src="images/entrenadores/coach2.jpg" alt="" onerror="this.remove()" /><span class="coach__ph">MF</span></div>
+        <h3>Nombre Entrenadora</h3>
+        <span class="coach__role">Funcional y HIIT</span>
+        <p>Especialista en entrenamiento funcional, p&eacute;rdida de grasa y acondicionamiento.</p>
+      </article>
+
+      <article class="coach reveal">
+        <div class="coach__img"><img src="images/entrenadores/coach3.jpg" alt="" onerror="this.remove()" /><span class="coach__ph">MF</span></div>
+        <h3>Nombre Entrenador</h3>
+        <span class="coach__role">Nutrici&oacute;n deportiva</span>
+        <p>Asesora tu alimentaci&oacute;n y suplementaci&oacute;n seg&uacute;n tu objetivo y tu metabolismo.</p>
+      </article>
+
+      <article class="coach reveal">
+        <div class="coach__img"><img src="images/entrenadores/coach4.jpg" alt="" onerror="this.remove()" /><span class="coach__ph">MF</span></div>
+        <h3>Nombre Entrenadora</h3>
+        <span class="coach__role">Clases grupales</span>
+        <p>Instructora de spinning, rumba fitness y GAP con energ&iacute;a inagotable.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== UBICACION Y HORARIOS ==================== -->
+<section class="section" id="ubicacion">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow reveal">Vis&iacute;tanos</span>
+      <h2 class="title reveal">Horarios y <span class="grad">ubicaci&oacute;n</span></h2>
+    </div>
+
+    <div class="contact">
+      <div class="contact__info reveal">
+        <div class="info-card">
+          <h3>Horarios de atenci&oacute;n</h3>
+          <ul class="hours">
+            <li><span>Lunes a Viernes</span><strong>5:00 a.m. &ndash; 10:00 p.m.</strong></li>
+            <li><span>S&aacute;bados</span><strong>7:00 a.m. &ndash; 6:00 p.m.</strong></li>
+            <li><span>Domingos</span><strong>8:00 a.m. &ndash; 1:00 p.m.</strong></li>
+            <li><span>Festivos</span><strong>8:00 a.m. &ndash; 1:00 p.m.</strong></li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Cont&aacute;ctanos</h3>
+          <ul class="contact-list">
+            <li>
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <div><strong>Direcci&oacute;n</strong><p data-address>Calle 00 # 00-00, Barrio, Ciudad</p></div>
+            </li>
+            <li>
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4.5 5.5c0 8 6 14 14 14l1.8-3.4-4-2-1.7 2a14.7 14.7 0 0 1-6.7-6.7l2-1.7-2-4L4.5 5.5Z"/></svg>
+              <div><strong>Tel&eacute;fono / WhatsApp</strong><p data-phone>+57 300 000 0000</p></div>
+            </li>
+            <li>
+              <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+              <div><strong>Correo</strong><p data-email>contacto@musclefit.com</p></div>
+            </li>
+          </ul>
+
+          <div class="socials socials--lg">
+            <a href="#" data-social="instagram" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.8.07-1.1.05-1.7.24-2.1.4-.5.2-.9.44-1.3.84-.4.4-.64.8-.84 1.3-.16.4-.35 1-.4 2.1C2.5 9.9 2.5 10.3 2.5 12s0 2.1.06 3.3c.05 1.1.24 1.7.4 2.1.2.5.44.9.84 1.3.4.4.8.64 1.3.84.4.16 1 .35 2.1.4 1.3.06 1.7.06 4.8.06s3.5 0 4.8-.06c1.1-.05 1.7-.24 2.1-.4.5-.2.9-.44 1.3-.84.4-.4.64-.8.84-1.3.16-.4.35-1 .4-2.1.06-1.2.06-1.6.06-3.3s0-2.1-.06-3.3c-.05-1.1-.24-1.7-.4-2.1-.2-.5-.44-.9-.84-1.3-.4-.4-.8-.64-1.3-.84-.4-.16-1-.35-2.1-.4C15.5 4 15.1 4 12 4Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.1-3.1a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z"/></svg>
+            </a>
+            <a href="#" data-social="facebook" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8.5h2.9l.44-3.4H13.5V7.9c0-1 .27-1.65 1.7-1.65h1.8V3.2c-.31-.04-1.38-.13-2.63-.13-2.6 0-4.37 1.58-4.37 4.5v2.51H7.1v3.4h2.9V22h3.5Z"/></svg>
+            </a>
+            <a href="#" data-social="tiktok" aria-label="TikTok" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.3 2h-3v13.1a2.6 2.6 0 1 1-2.1-2.55v-3a5.6 5.6 0 1 0 5.1 5.58V8.9a6.9 6.9 0 0 0 4 1.27V7.2a4 4 0 0 1-4-4Z"/></svg>
+            </a>
+            <a href="#" data-wa="Hola! Quiero informacion sobre MuscleFit Sport Center." aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.6A10 10 0 1 0 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__map reveal">
+        <!-- Ubicacion real: MUSCLEFIT SPORT CENTER, Florencia, Caqueta -->
+        <iframe
+          title="Ubicacion MuscleFit Sport Center"
+          src="https://www.google.com/maps?q=1.61137,-75.6061168&z=17&hl=es&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+        <a href="#" class="btn btn--ghost map__btn" data-maps target="_blank" rel="noopener">C&oacute;mo llegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="section section--alt" id="faq">
+  <div class="container container--narrow">
+    <div class="section__head">
+      <span class="eyebrow reveal">Dudas frecuentes</span>
+      <h2 class="title reveal">Preguntas <span class="grad">frecuentes</span></h2>
+    </div>
+
+    <div class="faq">
+      <details class="reveal">
+        <summary>&iquest;Necesito experiencia previa para entrenar aqu&iacute;?</summary>
+        <p>No. Al inscribirte recibes una rutina de bienvenida y un entrenador te acompa&ntilde;a en tus primeras sesiones para que aprendas la t&eacute;cnica correcta desde el inicio.</p>
+      </details>
+      <details class="reveal">
+        <summary>&iquest;Tienen matr&iacute;cula o cl&aacute;usula de permanencia?</summary>
+        <p>No cobramos matr&iacute;cula ni exigimos permanencia m&iacute;nima. Puedes tomar el plan por d&iacute;a, semana, quincena, mes, trimestre o a&ntilde;o seg&uacute;n te convenga.</p>
+      </details>
+      <details class="reveal">
+        <summary>&iquest;Puedo probar antes de inscribirme?</summary>
+        <p>S&iacute;. Ofrecemos una clase de prueba totalmente gratis. Escr&iacute;benos por WhatsApp y agendamos tu visita en el horario que prefieras.</p>
+      </details>
+      <details class="reveal">
+        <summary>&iquest;Los suplementos son originales?</summary>
+        <p>Todos nuestros productos son importados y cuentan con registro y sello de autenticidad de cada marca. Puedes verificarlo en la tienda f&iacute;sica.</p>
+      </details>
+      <details class="reveal">
+        <summary>&iquest;Hacen env&iacute;os de productos de la tienda?</summary>
+        <p>S&iacute;, realizamos env&iacute;os a nivel nacional. Escr&iacute;benos por WhatsApp con el producto que deseas y te confirmamos disponibilidad y costo de env&iacute;o.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA FINAL ==================== -->
+<section class="cta">
+  <div class="container cta__inner reveal">
+    <h2>&iquest;Listo para empezar? <span class="grad">Tu primera clase es gratis.</span></h2>
+    <p>Escr&iacute;benos por WhatsApp y te asesoramos sin compromiso.</p>
+    <a href="#" class="btn btn--primary btn--lg" data-wa="Hola! Quiero agendar mi *clase de prueba gratis* en MuscleFit Sport Center.">
+      <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.6A10 10 0 1 0 12 2z"/></svg>
+      Escr&iacute;benos ahora
+    </a>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <div class="logo-box logo-box--footer">
+        <img src="images/Logo.jpg" alt="MuscleFit Sport Center" />
+      </div>
+      <p>Centro deportivo dedicado a transformar vidas a trav&eacute;s del entrenamiento, la disciplina y la nutrici&oacute;n.</p>
+      <div class="socials">
+        <a href="#" data-social="instagram" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.8.07-1.1.05-1.7.24-2.1.4-.5.2-.9.44-1.3.84-.4.4-.64.8-.84 1.3-.16.4-.35 1-.4 2.1C2.5 9.9 2.5 10.3 2.5 12s0 2.1.06 3.3c.05 1.1.24 1.7.4 2.1.2.5.44.9.84 1.3.4.4.8.64 1.3.84.4.16 1 .35 2.1.4 1.3.06 1.7.06 4.8.06s3.5 0 4.8-.06c1.1-.05 1.7-.24 2.1-.4.5-.2.9-.44 1.3-.84.4-.4.64-.8.84-1.3.16-.4.35-1 .4-2.1.06-1.2.06-1.6.06-3.3s0-2.1-.06-3.3c-.05-1.1-.24-1.7-.4-2.1-.2-.5-.44-.9-.84-1.3-.4-.4-.8-.64-1.3-.84-.4-.16-1-.35-2.1-.4C15.5 4 15.1 4 12 4Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.1-3.1a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3Z"/></svg>
+        </a>
+        <a href="#" data-social="facebook" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8.5h2.9l.44-3.4H13.5V7.9c0-1 .27-1.65 1.7-1.65h1.8V3.2c-.31-.04-1.38-.13-2.63-.13-2.6 0-4.37 1.58-4.37 4.5v2.51H7.1v3.4h2.9V22h3.5Z"/></svg>
+        </a>
+        <a href="#" data-social="tiktok" aria-label="TikTok" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.3 2h-3v13.1a2.6 2.6 0 1 1-2.1-2.55v-3a5.6 5.6 0 1 0 5.1 5.58V8.9a6.9 6.9 0 0 0 4 1.27V7.2a4 4 0 0 1-4-4Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navegaci&oacute;n</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#planes">Planes</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#tienda">Suplementos</a></li>
+        <li><a href="#tienda">Ropa deportiva</a></li>
+        <li><a href="#personalizado">Entrenamiento personalizado</a></li>
+        <li><a href="#entrenadores">Entrenadores</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contacto</h4>
+      <ul>
+        <li data-address>Calle 00 # 00-00, Barrio, Ciudad</li>
+        <li data-phone>+57 300 000 0000</li>
+        <li data-email>contacto@musclefit.com</li>
+        <li>Lun a Vie: 5:00 a.m. &ndash; 10:00 p.m.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; <span id="year">2026</span> MuscleFit Sport Center. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a href="#" class="wa-float" data-wa="Hola! Quiero informacion sobre MuscleFit Sport Center." aria-label="Escribenos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3zM12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.6A10 10 0 1 0 12 2z"/></svg>
+  <span>Escr&iacute;benos</span>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
