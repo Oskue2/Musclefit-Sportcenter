@@ -10,10 +10,10 @@
 const CONFIG = {
   // Numero de WhatsApp en formato internacional, SIN +, espacios ni guiones.
   // Colombia = 57. Ejemplo: 573001234567
-  whatsapp: '573203258615',
+  whatsapp: '573014668399',
 
   // Datos de contacto que se muestran en la pagina
-  telefono: '+57 320 325 8615',
+  telefono: '+57 301 466 8399',
   email:    'contacto@musclefit.com',
 
   // PENDIENTE: falta el numero exacto (ej. "Calle 6 # 12-34").
