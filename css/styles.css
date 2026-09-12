@@ -152,6 +152,11 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
               background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
 }
 .btn .ico { width: 20px; height: 20px; flex-shrink: 0; }
+.btn--sm .ico { width: 17px; height: 17px; }
+
+/* Icono de WhatsApp en enlaces de texto */
+.strip__cta, .note a[data-wa] { display: inline-flex; align-items: center; gap: 8px; }
+.strip__cta .ico--wa, .note a[data-wa] .ico--wa { width: 17px; height: 17px; flex-shrink: 0; }
 
 .btn--primary {
   background: linear-gradient(100deg, var(--cyan-bright), var(--cyan) 55%, var(--cyan-deep));
