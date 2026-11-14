@@ -194,33 +194,27 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 }
 .header__inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 
-/* El archivo Logo.jpg es cuadrado y la marca ocupa solo una franja central.
-   Lo recortamos con overflow para poder mostrarla mucho mas grande
-   sin que el logo ocupe mas alto del necesario en el header. */
+/* La marca son dos PNG transparentes: el emblema (logo-emblema.png) y el
+   texto (logo-texto.png). Todo se dimensiona por ancho del contenedor, asi
+   ambos conservan su proporcion entre si en cualquier tamano. */
 .logo-box {
-  display: block;
-  overflow: hidden;
-  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-shrink: 0;
 }
-.logo-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transform: scale(1.34);
-  filter: brightness(1.08) contrast(1.04);
-}
+.logo-box img { height: auto; }
+.logo__mark { width: 21%; }
+.logo__text { width: 74%; }
 
 .brand {
-  height: 76px;
-  aspect-ratio: 3.9 / 1;
-  transition: height .35s var(--ease);
+  width: 270px;
+  transition: width .35s var(--ease);
 }
-.header.is-stuck .brand { height: 58px; }
+.header.is-stuck .brand { width: 215px; }
 
 .brand__img { transition: transform .35s var(--ease); }
-.brand:hover .brand__img { transform: scale(1.42); }
+.brand:hover .brand__img { transform: scale(1.08); }
 
 .nav { display: flex; align-items: center; gap: 30px; }
 .nav__list { display: flex; align-items: center; gap: 26px; }
@@ -412,7 +406,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   color: rgba(34, 197, 232, .35);
 }
 .frame__ph svg { width: 96px; height: 96px; }
-.logo-box--frame { width: 88%; aspect-ratio: 3.9 / 1; }
+.logo-box--frame { width: 88%; }
 .logo-box--frame img { opacity: .9; }
 .frame::after {
   content: '';
@@ -935,8 +929,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   padding-bottom: 48px;
 }
 .logo-box--footer {
-  width: min(330px, 100%);
-  aspect-ratio: 3.9 / 1;
+  width: min(290px, 100%);
   margin-bottom: 20px;
 }
 .footer__col > p { color: var(--muted); font-size: .92rem; margin-bottom: 20px; }
@@ -1064,8 +1057,8 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   .wa-float span { display: none; }
   .frame { aspect-ratio: 4 / 3; }
   .section__head { margin-bottom: 34px; }
-  .brand { height: 54px; }
-  .header.is-stuck .brand { height: 46px; }
+  .brand { width: 200px; }
+  .header.is-stuck .brand { width: 170px; }
 }
 
 @media (max-width: 420px) {
@@ -1182,6 +1175,9 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   background: linear-gradient(100deg, #6fe4ff, #22c5e8 55%, #0b8cb0);
 }
 
+/* Sobre fondo claro se usa la version del logo con el blanco pasado a grafito */
+[data-theme="light"] .logo__mark { content: url("../images/logo-emblema-oscuro.png"); }
+[data-theme="light"] .logo__text { content: url("../images/logo-texto-oscuro.png"); }
 [data-theme="light"] ::-webkit-scrollbar-thumb { background: #c3ccd6; }
 [data-theme="light"] .btn--ghost { border-color: rgba(10, 20, 30, .25); }
 [data-theme="light"] .header.is-stuck {
