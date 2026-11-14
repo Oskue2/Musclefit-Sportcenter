@@ -8,6 +8,7 @@
   --bg-2:          #0d0f13;
   --surface:       #14171d;
   --surface-2:     #191d25;
+  --card-end:      #0b0d11;
   --line:          rgba(255, 255, 255, .09);
   --line-strong:   rgba(34, 197, 232, .35);
 
@@ -400,7 +401,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   border: 1px solid var(--line);
   background:
     radial-gradient(80% 80% at 30% 20%, rgba(34, 197, 232, .12), transparent 70%),
-    linear-gradient(150deg, var(--surface), #0b0d11);
+    linear-gradient(150deg, var(--surface), var(--card-end));
   box-shadow: var(--shadow);
 }
 .frame > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
@@ -455,7 +456,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   padding: 34px 28px;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  background: linear-gradient(160deg, var(--surface), #0b0d11);
+  background: linear-gradient(160deg, var(--surface), var(--card-end));
   overflow: hidden;
   transition: transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease);
 }
@@ -504,7 +505,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   padding: 38px 30px;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  background: linear-gradient(165deg, var(--surface), #0b0d11);
+  background: linear-gradient(165deg, var(--surface), var(--card-end));
   transition: transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease);
 }
 .plan:hover { transform: translateY(-6px); border-color: var(--line-strong); }
@@ -513,7 +514,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   border-color: var(--cyan);
   background:
     radial-gradient(90% 60% at 50% 0%, rgba(34, 197, 232, .16), transparent 70%),
-    linear-gradient(165deg, var(--surface-2), #0b0d11);
+    linear-gradient(165deg, var(--surface-2), var(--card-end));
   box-shadow: 0 20px 60px rgba(34, 197, 232, .16);
 }
 .plan--featured::after {
@@ -663,7 +664,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  background: linear-gradient(165deg, var(--surface), #0b0d11);
+  background: linear-gradient(165deg, var(--surface), var(--card-end));
   transition: transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease);
 }
 .product:hover { transform: translateY(-8px); border-color: var(--line-strong); box-shadow: var(--shadow); }
@@ -739,7 +740,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   border: 1px solid var(--line);
   background:
     radial-gradient(70% 60% at 50% 25%, rgba(34, 197, 232, .16), transparent 70%),
-    linear-gradient(160deg, #171b22, #0b0d11);
+    linear-gradient(160deg, #171b22, var(--card-end));
   transition: border-color .35s var(--ease), transform .35s var(--ease);
 }
 .coach__img > img {
@@ -785,7 +786,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   padding: 28px 26px;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  background: linear-gradient(165deg, var(--surface), #0b0d11);
+  background: linear-gradient(165deg, var(--surface), var(--card-end));
 }
 .info-card h3 {
   font-family: var(--font-head);
@@ -1071,3 +1072,271 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   .container { padding-inline: 16px; }
   .card, .plan, .info-card { padding-inline: 20px; }
 }
+
+/* ============================================================
+   PORTAL (index.html) Y PAGINAS EN CONSTRUCCION
+   ============================================================ */
+.hero--portal .hero__title { font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1; }
+
+.choices { margin-top: 46px; text-align: left; }
+
+.choice { display: flex; flex-direction: column; }
+.choice__kind {
+  font-family: var(--font-head);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 6px;
+}
+.choice h3 { margin-bottom: 4px; }
+.choice__sede {
+  font-family: var(--font-head);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.choice p { margin-top: 8px; margin-bottom: 24px; }
+.choice__go {
+  margin-top: auto;
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  transition: transform .25s var(--ease);
+}
+.choice:hover .choice__go { transform: translateX(5px); }
+.choice__tag {
+  position: absolute;
+  top: 18px; right: 18px;
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .05);
+  color: var(--muted);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.footer__col li strong { color: var(--text); font-weight: 600; }
+
+/* Paginas en construccion */
+.wip__brand {
+  margin-top: 24px;
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.hero--wip .hero__title { margin-top: 6px; }
+.footer--mini { padding-top: 0; }
+.footer--mini .footer__bottom { border-top: 0; }
+
+@media (max-width: 900px) {
+  .choices { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; }
+}
+
+/* ============================================================
+   MODO CLARO
+   Se activa con <html data-theme="light"> (boton flotante).
+   --white pasa a ser el color de los titulos, por eso es oscuro.
+   ============================================================ */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg:            #f5f7fa;
+  --bg-2:          #eaeef3;
+  --surface:       #ffffff;
+  --surface-2:     #f1f8fb;
+  --card-end:      #f3f6f9;
+  --line:          rgba(10, 20, 30, .1);
+  --line-strong:   rgba(8, 145, 178, .4);
+
+  --cyan:          #0891b2;
+  --cyan-bright:   #14a9cc;
+  --cyan-deep:     #0b7896;
+
+  --white:         #0c1116;
+  --text:          #2b3440;
+  --muted:         #5d6877;
+
+  --shadow:   0 18px 50px rgba(15, 30, 50, .12);
+  --glow:     0 0 28px rgba(8, 145, 178, .25);
+}
+
+/* Los elementos rellenos conservan el cian vivo del logo */
+[data-theme="light"] .btn--primary,
+[data-theme="light"] .plan__tag,
+[data-theme="light"] .tab.is-active,
+[data-theme="light"] .product__badge {
+  background: linear-gradient(100deg, #6fe4ff, #22c5e8 55%, #0b8cb0);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb { background: #c3ccd6; }
+[data-theme="light"] .btn--ghost { border-color: rgba(10, 20, 30, .25); }
+[data-theme="light"] .header.is-stuck {
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 10px 30px rgba(15, 30, 50, .1);
+}
+
+[data-theme="light"] .hero { background: #eef2f6; }
+[data-theme="light"] .hero::before {
+  background:
+    radial-gradient(75% 60% at 50% 0%, rgba(34, 197, 232, .2), transparent 65%),
+    linear-gradient(180deg, rgba(245, 247, 250, .55) 0%, rgba(245, 247, 250, .8) 55%, var(--bg) 100%);
+}
+[data-theme="light"] .hero::after {
+  background-image:
+    linear-gradient(rgba(10, 20, 30, .045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 20, 30, .045) 1px, transparent 1px);
+}
+[data-theme="light"] .hero__bg img { opacity: .22; }
+[data-theme="light"] .hero__title,
+[data-theme="light"] .stats strong { text-shadow: none; }
+[data-theme="light"] .hero__text { color: var(--text); }
+[data-theme="light"] .hero__scroll { border-color: rgba(10, 20, 30, .3); }
+
+[data-theme="light"] .product__img,
+[data-theme="light"] .coach__img {
+  background:
+    radial-gradient(70% 70% at 50% 30%, rgba(34, 197, 232, .16), transparent 70%),
+    linear-gradient(160deg, #eef2f6, #e1e7ed);
+}
+[data-theme="light"] .plan__list li.off { color: #9aa4b1; }
+[data-theme="light"] .plan__list li.off::before {
+  background: rgba(10, 20, 30, .04);
+  box-shadow: inset 0 0 0 1px rgba(10, 20, 30, .12);
+}
+[data-theme="light"] .contact__map iframe { filter: none; }
+[data-theme="light"] .map__btn { background: rgba(255, 255, 255, .9); }
+[data-theme="light"] .choice__tag { background: rgba(10, 20, 30, .05); }
+
+[data-theme="light"] .footer { background: var(--bg-2); }
+[data-theme="light"] .footer__bottom p { color: var(--muted); }
+
+@media (max-width: 900px) {
+  [data-theme="light"] .nav {
+    background: rgba(255, 255, 255, .97);
+    box-shadow: -20px 0 60px rgba(15, 30, 50, .18);
+  }
+}
+
+/* ---------- Redes sociales: color de cada marca al pasar el cursor ---------- */
+.socials a[data-social="instagram"]:hover {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b 50%, #6228d7);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(238, 42, 123, .4);
+}
+.socials a[data-social="facebook"]:hover {
+  background: #1877f2;
+  border-color: #1877f2;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(24, 119, 242, .4);
+}
+.socials a[data-social="tiktok"]:hover {
+  background: #010101;
+  border-color: #25f4ee;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(254, 44, 85, .4);
+}
+.socials a[data-wa]:hover {
+  background: var(--wa);
+  border-color: var(--wa);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(37, 211, 102, .4);
+}
+
+/* Bloque "Visita nuestras redes sociales" del portal */
+.follow { margin-top: 56px; }
+.follow__title {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.socials--xl { justify-content: center; flex-wrap: wrap; gap: 16px; }
+.socials--xl a {
+  width: 62px; height: 62px;
+  border-radius: 50%;
+  border-color: var(--line-strong);
+  background: var(--surface);
+  color: var(--cyan);
+}
+.socials--xl a svg { width: 27px; height: 27px; }
+.socials--xl a:hover { transform: translateY(-6px) scale(1.06); }
+
+/* ---------- Paginas legales (politica de datos, terminos) ---------- */
+.footer__legal { margin-top: 8px; }
+.footer__legal a { transition: color .25s var(--ease); }
+.footer__legal a:hover { color: var(--cyan); }
+
+.legal { padding-block: 150px 90px; }
+.legal__meta { color: var(--muted); font-size: .9rem; margin-top: 14px; }
+.legal__draft {
+  margin-top: 26px;
+  padding: 16px 20px;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius);
+  background: rgba(34, 197, 232, .07);
+  font-size: .93rem;
+}
+.legal__draft strong { color: var(--white); }
+.legal h2 {
+  font-family: var(--font-head);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 40px 0 12px;
+}
+.legal p { margin-bottom: 12px; }
+.legal ul { list-style: disc; padding-left: 22px; margin-bottom: 12px; }
+.legal li { margin-bottom: 7px; }
+.legal li::marker { color: var(--cyan); }
+.legal strong { color: var(--white); font-weight: 600; }
+.legal p a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; }
+.legal__links { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); }
+/* Dato pendiente por completar */
+.pend {
+  padding: 1px 6px;
+  border-radius: 5px;
+  background: rgba(255, 196, 0, .2);
+  color: inherit;
+  font-weight: 600;
+}
+
+/* ---------- Boton para cambiar de modo ---------- */
+.theme-toggle {
+  position: fixed;
+  left: 22px; bottom: 22px;
+  z-index: 99;
+  width: 48px; height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--cyan);
+  box-shadow: var(--shadow);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.theme-toggle:hover { transform: scale(1.08) rotate(12deg); box-shadow: var(--glow); }
+.theme-toggle svg { width: 22px; height: 22px; }
+.theme-toggle__luna { display: none; }
+[data-theme="light"] .theme-toggle__sol { display: none; }
+[data-theme="light"] .theme-toggle__luna { display: block; }

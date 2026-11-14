@@ -10,10 +10,10 @@
 const CONFIG = {
   // Numero de WhatsApp en formato internacional, SIN +, espacios ni guiones.
   // Colombia = 57. Ejemplo: 573001234567
-  whatsapp: '573014668399',
+  whatsapp: '573112247134',
 
   // Datos de contacto que se muestran en la pagina
-  telefono: '+57 301 466 8399',
+  telefono: '+57 311 224 7134',
   email:    'contacto@musclefit.com',
 
   // PENDIENTE: falta el numero exacto (ej. "Calle 6 # 12-34").
@@ -102,6 +102,9 @@ function initHeader() {
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
+  // El portal y las paginas en construccion no tienen menu
+  if (!burger || !nav) return;
+
   const cerrar = function () {
     nav.classList.remove('is-open');
     burger.classList.remove('is-open');
@@ -133,7 +136,8 @@ function initHeader() {
    4. Link activo segun la seccion visible
    ------------------------------------------------------------ */
 function initNavActivo() {
-  const links = Array.prototype.slice.call(document.querySelectorAll('.nav__link'));
+  // Solo los links internos (#seccion); "Inicio" apunta a index.html
+  const links = Array.prototype.slice.call(document.querySelectorAll('.nav__link[href^="#"]'));
   const secciones = links
     .map(function (l) { return document.querySelector(l.getAttribute('href')); })
     .filter(Boolean);
@@ -245,9 +249,44 @@ function initFaq() {
 }
 
 /* ------------------------------------------------------------
+   9. Modo claro / oscuro
+   El boton se crea aqui para no repetirlo en cada pagina.
+   La preferencia se guarda y se aplica en el <head> de cada HTML.
+   ------------------------------------------------------------ */
+function initTema() {
+  const raiz = document.documentElement;
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'theme-toggle';
+  btn.innerHTML =
+    '<svg class="theme-toggle__sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>' +
+    '<svg class="theme-toggle__luna" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.2 8.2 0 1 0 10.2 10.2Z"/></svg>';
+
+  const esClaro = function () { return raiz.getAttribute('data-theme') === 'light'; };
+
+  const rotular = function () {
+    const texto = esClaro() ? 'Cambiar a modo oscuro' : 'Cambiar a modo claro';
+    btn.setAttribute('aria-label', texto);
+    btn.title = texto;
+  };
+
+  btn.addEventListener('click', function () {
+    const nuevo = esClaro() ? 'dark' : 'light';
+    if (nuevo === 'light') raiz.setAttribute('data-theme', 'light');
+    else raiz.removeAttribute('data-theme');
+    try { localStorage.setItem('mf-theme', nuevo); } catch (e) {}
+    rotular();
+  });
+
+  rotular();
+  document.body.appendChild(btn);
+}
+
+/* ------------------------------------------------------------
    Arranque
    ------------------------------------------------------------ */
 document.addEventListener('DOMContentLoaded', function () {
+  initTema();
   initWhatsApp();
   initDatos();
   initHeader();

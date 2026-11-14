@@ -1,15 +1,20 @@
 # MuscleFit Sport Center — Sitio web
 
-Sitio informativo de una sola página (one-page) en HTML, CSS y JavaScript puro.
+Sitio informativo multipágina en HTML, CSS y JavaScript puro.
 No requiere instalación ni servidor: se abre haciendo doble clic en `index.html`.
 
 ## Estructura
 
 ```
 MuscleFit Sport Center/
-├── index.html          ← todo el contenido de la página
-├── css/styles.css      ← estilos (colores, tipografías, responsive)
-├── js/main.js          ← configuración + interacciones
+├── index.html          ← portada: el cliente elige entre las tres opciones
+├── sede-avenidas.html  ← MuscleFit Sport Center, Sede Las Avenidas (página completa)
+├── sede-la-vega.html   ← MuscleFit Sport Center, Sede La Vega (en construcción)
+├── suplementos.html    ← MuscleFit Suplementos (en construcción)
+├── politica-datos.html ← Política de Tratamiento de Datos (Ley 1581 de 2012) — BORRADOR
+├── terminos.html       ← Términos y Condiciones — BORRADOR
+├── css/styles.css      ← estilos compartidos (colores, tipografías, responsive)
+├── js/main.js          ← configuración + interacciones (compartido por todas las páginas)
 ├── images/
 │   ├── Logo.jpg        ← logo (ya incluido)
 │   ├── hero.jpg        ← (opcional) foto de fondo del inicio
@@ -45,7 +50,7 @@ sociales y el botón "Cómo llegar".
 
 ## 2. El mapa de Google
 
-En `index.html`, busca el comentario `<!-- Reemplaza el valor de q= ... -->` y cambia
+En `sede-avenidas.html`, busca el comentario `<!-- Reemplaza el valor de q= ... -->` y cambia
 la dirección dentro del `src`:
 
 ```html
@@ -82,7 +87,7 @@ nombres exactos y aparecerán solas:
 
 ## 4. Textos, precios y productos
 
-Todo está en `index.html`, en secciones bien marcadas con comentarios:
+Todo lo de la sede está en `sede-avenidas.html`, en secciones bien marcadas con comentarios:
 `HERO`, `NOSOTROS`, `SERVICIOS`, `PLANES`, `TIENDA`, `ENTRENADORES`,
 `TESTIMONIOS`, `UBICACION`, `FAQ`, `FOOTER`.
 
